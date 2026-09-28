@@ -503,27 +503,30 @@
           </div>
         </div>
 
-        <!-- Project 3: FinSentinel -->
+        <!-- Project 3: SEC Disclosure Integrity -->
         <div class="col" data-aos="fade-up" data-aos-delay="160">
           <div class="proj-card h-100">
-            <div class="proj-thumb">
-              <img src="assets/projects/finsentinel.jpg" alt="FinSentinel Pipeline"
-                   onerror="this.style.display='none';this.parentElement.classList.add('no-img');" />
-              <div class="proj-thumb-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="proj-thumb no-img">
+              <div class="proj-thumb-icon"><i class="fas fa-file-shield" aria-hidden="true"></i></div>
             </div>
             <div class="proj-body">
-              <h5 class="proj-title">FinSentinel</h5>
+              <h5 class="proj-title">SEC Disclosure Integrity</h5>
               <p class="proj-desc">
-                Real-time stock news sentiment pipeline running entirely in Docker on Apple Silicon.
-                Uses Hadoop, HBase, Hive, Spark SQL, Spark NLP, and Spark ML to classify financial
-                headlines as bullish, bearish, or neutral.
+                Data engineering pipeline for SEC financial statement data using Databricks,
+                PySpark, and Delta Lake. Implements repeatable quarterly ingestion, source
+                tracking, and validation that quarantines invalid records with rejection reasons.
               </p>
               <div class="proj-tags">
-                <span class="stag stag-mint">Spark NLP</span>
-                <span class="stag stag-mint">Docker</span>
-                <span class="stag stag-mint">Hadoop</span>
-                <span class="stag stag-mint">HBase</span>
+                <span class="stag stag-mint">Databricks</span>
+                <span class="stag stag-mint">PySpark</span>
+                <span class="stag stag-mint">Delta Lake</span>
+                <span class="stag stag-gold">Data Quality</span>
               </div>
+            </div>
+            <div class="proj-footer">
+              <a href="https://github.com/atifm1726/sec-disclosure-integrity" class="proj-link" target="_blank" rel="noopener">
+                <i class="fab fa-github me-2"></i>View on GitHub
+              </a>
             </div>
           </div>
         </div>

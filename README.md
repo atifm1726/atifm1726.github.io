@@ -66,7 +66,7 @@ GitHub Pages redeploys automatically within 1 to 2 minutes. No further configura
 | `assets/Atif_Memon_Resume.pdf` | Replace with your latest resume PDF. Keep the same filename or update the `href` in the hero section. |
 | `assets/projects/chest-mnistv2.jpg` | Screenshot or cover image for the ChestMNIST project. |
 | `assets/projects/noaa-storm.jpg` | Screenshot for the NOAA Storm Events project. |
-| `assets/projects/finsentinel.jpg` | Screenshot for FinSentinel. |
+| SEC Disclosure Integrity | Uses a built-in document shield icon; no thumbnail file required. |
 | `assets/projects/brain-tumor.jpg` | Screenshot for Brain Tumor CNN. |
 | `assets/projects/cancer-detection.jpg` | Screenshot for Cancer Detection on Hugging Face. |
 
