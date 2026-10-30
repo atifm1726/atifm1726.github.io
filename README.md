@@ -3,6 +3,34 @@
 Personal portfolio site built with Bootstrap 5, AOS, and vanilla JavaScript.
 No build step, no frameworks, no Node. Opens directly in a browser.
 
+## Traffic analytics (GoatCounter)
+
+GoatCounter offers free hosted analytics for reasonable public usage, including
+page views, estimated visitors, referring sites, browsers, and approximate location.
+Sign up at https://www.goatcounter.com/signup, verify your email, and keep your
+dashboard private in the account settings.
+
+To activate, set this meta tag in `index.html` to the endpoint from your account:
+
+```html
+<meta name="goatcounter-endpoint" content="https://YOUR-ACCOUNT.goatcounter.com/count" />
+```
+
+Publish the changed files to GitHub Pages, then visit the live HTTPS site and
+check your GoatCounter dashboard. Local HTTP/file previews are not counted.
+The integration stays disabled until a valid endpoint is configured. Remove the
+endpoint to disable it again. No API key or password belongs in these files.
+
+`js/analytics.js` sends the page path and only the origin of referring sites,
+excluding query strings and fragments. The resume button also records a named
+download-click event. Analytics never receives contact form fields. Blockers can
+prevent counting; location is approximate and may reflect a VPN or network exit.
+Reports start after activation and cannot recover historical traffic.
+
+The contact form sends voluntarily supplied names, emails, messages, and optional
+phone numbers to the existing Formspree endpoint. View these in your Formspree
+inbox; they are separate from analytics and cannot identify every visitor.
+
 ---
 
 ## Deploy to GitHub Pages (step by step)

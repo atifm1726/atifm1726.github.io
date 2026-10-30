@@ -69,6 +69,8 @@ if (contactForm) {
   contactForm.addEventListener('submit', function(e) {
     e.preventDefault();
 
+    if (!contactForm.reportValidity()) return;
+
     // Show loading state
     submitBtn.disabled = true;
     submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Sending...';

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="goatcounter-endpoint" content="https://atif-portfolio.goatcounter.com/count" />
   <meta name="description" content="Atif Aziz Memon: Database Administrator and Data Analyst. Fintech DBA experience, ETL pipelines, Power BI dashboards, and machine learning projects." />
   <title>Atif Aziz Memon | DBA and Data Analyst</title>
 
@@ -67,7 +68,7 @@
             Power BI dashboards, and machine learning insights.
           </p>
           <div class="hero-buttons mt-4">
-            <a href="assets/Atif_Memon_Resume.pdf" class="btn btn-primary-custom" download>
+            <a href="assets/Atif_Memon_Resume.pdf" class="btn btn-primary-custom" download data-goatcounter-click="resume-download" data-goatcounter-title="Resume download">
               <i class="fas fa-download me-2"></i>Download Resume
             </a>
             <a href="#contact" class="btn btn-outline-custom ms-3">
@@ -679,6 +680,14 @@
                           placeholder="Tell me about the role or project..." required></textarea>
               </div>
               <div class="col-12">
+                <label class="form-label" for="fphone">Phone number (optional)</label>
+                <input type="tel" id="fphone" name="phone" class="form-control cf-input"
+                       autocomplete="tel" maxlength="40" placeholder="Include your country code" />
+              </div>
+              <div class="col-12">
+                <p class="small text-muted mb-0">By sending this form, you share your name, email, message, and any phone number you enter with me through Formspree so I can reply. Please only include information you want to share.</p>
+              </div>
+              <div class="col-12">
                 <button type="submit" class="btn btn-primary-custom w-100" id="submitBtn">
                   <i class="fas fa-paper-plane me-2"></i>Send Message
                 </button>
@@ -707,6 +716,7 @@
         </a>
       </div>
       <p class="footer-copy">&copy; 2026 Atif Aziz Memon. All rights reserved.</p>
+      <p class="small text-muted">When enabled, this site uses <a href="https://www.goatcounter.com/help/privacy" target="_blank" rel="noopener">GoatCounter</a> for cookie-free traffic statistics and approximate visitor location. Contact details are only collected when you submit the contact form and are not sent to analytics.</p>
     </div>
   </footer>
 
@@ -715,6 +725,7 @@
   <!-- AOS -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <!-- Custom JS -->
+  <script src="js/analytics.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
