@@ -9,6 +9,8 @@
   if (location.protocol !== 'https:') return;
 
   window.goatcounter = {
+    // Send the initial pageview explicitly after the library loads.
+    no_onload: true,
     // Query strings and fragments may contain personal information.
     path: function () { return location.pathname; },
     referrer: function () {
@@ -21,5 +23,18 @@
   script.src = 'https://gc.zgo.at/count.js';
   script.setAttribute('data-goatcounter', endpoint);
   script.referrerPolicy = 'strict-origin';
+  script.onload = function () {
+    var counted = false;
+    function countOpening() {
+      if (counted || document.visibilityState === 'hidden' || document.visibilityState === 'prerender') return;
+      counted = true;
+      document.removeEventListener('visibilitychange', countOpening);
+      // Count each document opening, even within an existing visitor session.
+      window.goatcounter.count({ no_session: true });
+    }
+    document.addEventListener('visibilitychange', countOpening);
+    countOpening();
+    window.goatcounter.bind_events();
+  };
   document.head.appendChild(script);
 }());

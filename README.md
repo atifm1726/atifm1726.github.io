@@ -18,6 +18,9 @@ To activate, set this meta tag in `index.html` to the endpoint from your account
 
 Publish the changed files to GitHub Pages, then visit the live HTTPS site and
 check your GoatCounter dashboard. Local HTTP/file previews are not counted.
+Each visible page opening counts, including repeat visits and reloads within the
+same session. Section navigation does not create a pageview. These opening counts
+are not a count of distinct people. Background tabs count when first made visible.
 The integration stays disabled until a valid endpoint is configured. Remove the
 endpoint to disable it again. No API key or password belongs in these files.
 
